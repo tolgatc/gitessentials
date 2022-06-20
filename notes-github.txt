@@ -98,4 +98,105 @@ git status, will show brach is up to date and file exist again
 rm first-push.txt
 git checkout first-push.txt
 file came back
----
+---lesson 14---
+git remote -v, shows all rmote oigin
+
+git push production feature branch name
+
+---lesson 15---
+
+git checkout -b new-branch
+git checkout new-branch
+
+still all local
+
+git branch shows we are all now new bracnh
+
+--- lesston 16
+git checkout -b new-branch makes new branch
+
+switch between branch is with git checkout -name
+
+create newf ile new-branch file
+
+ls -la shows new file
+
+git add new-branch file
+git commit  -m "new branch"
+
+git push origin new-branch
+
+if you do origin master its not corect
+
+now you can see github accep new coe, there is new code with file
+
+doesnta exist in master
+
+---lesston 17--- merging
+
+gt cehckout newbranch
+
+gona merge. first update master before doing something
+
+git checkout master
+git pull origin master
+
+git merge new-branch
+
+new file, 
+
+git status
+
+ls-la shows new file
+
+github only did this local
+
+git push origin master send to github
+
+master now on github website has new stuff
+
+and the file showd under master branch
+
+---lesson 18
+
+git log shows latest change
+
+see latest new branch
+
+git pull origin master, gets latest version on git
+
+ j k moving in git log
+ 
+ with q exti
+ 
+ ---leson 19---
+ 
+ git pull origin master, for current branch
+ 
+ no updates
+ 
+ edit readme manually online
+ 
+ add stuff 
+ 
+ git pull origin master bring commit to computer
+ 
+ fast forawrd and changes in file
+ 
+ if you try to push with stuff still top pull gives error
+ 
+ edit new branchf ile
+ 
+ one commit behind
+ 
+ touch empty-file.txt
+ 
+ ls -la shows file in it, git add and commmt
+ 
+ we dont have updaetd branch file
+
+
+git push origin master rejected 
+
+
+ 
