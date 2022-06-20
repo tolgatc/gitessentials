@@ -1,0 +1,101 @@
+---Lesson 3---
+dir (show directory)
+cd (change directory)
+pwd (working directory
+---Lesson 4---
+git config --global user.name "full name" (configure name)
+git config --global user.email "full name" (configure email , match github)
+cat ~/.gitconfig (should show file with data above)
+---Lesson 5---
+ssh-keygen -o (generate ssh key)
+
+- This key should be pasted into github ssk keys in seetings
+---Lesson 6---
+git clone (url with ssh in github)
+ls -la (shows all files)
+git log
+
+---Lesson 7---
+assume you have repo: gitessentials
+quick setup follow on github commands
+mkdir test (makes directory test)
+git init (.git folder creation)
+git add README.me (add file README.me to commit)
+git status (shows status currently)
+git commit -m "First commit"
+git log
+git remote add origin (add here url of your repo)
+git push origin master
+---Lesson 10---
+unstager work
+stage work
+commit work
+push work
+
+flow for pushing work
+
+creat file nano first-file.txt (create file and enter something)
+
+now you have new file
+git status (and see it has been added, untracked)
+
+not staged yet
+
+git add first-file.txt
+git status (not it is staged, not push yet)
+git commit -m "first push" (this created commited)
+git push origin master (this take current commit to origin(github), uploaded an new)
+
+
+---Lesson 11---
+git status (run often!)
+
+edit first-push.txt file
+git status will show first-push is modified
+
+now
+
+git add first-push.txt or git add . (all files)
+
+git status show this file to b comited
+
+git commit -m
+
+git status will show nothing, now say
+git push origin master (send to github, new commit)
+
+rm first-push.txt (removes file)
+ls -la, show  files gona
+git status will saym file is deleted 
+--- Lesson 12 ---
+git add . (add all files)
+
+git status (now will show the files is deleted)
+
+what if we dont want to commit and unstage
+git reset HEAD first-push.txt
+git status
+Now file is unstaged, its not undeleted
+
+git add first-push.txt
+
+git reset HEAD frst-push.txt
+
+git status (shows unstaged)
+
+how to undelete
+
+--- Lesston 13 ---
+alread did rm first push
+
+its gone
+
+with git:
+
+git checkout -- first-push.txt
+git status, will show brach is up to date and file exist again
+
+rm first-push.txt
+git checkout first-push.txt
+file came back
+---
