@@ -198,5 +198,94 @@ git pull origin master, gets latest version on git
 
 git push origin master rejected 
 
+git pull origin master > this will ask to merge
+dont rename file and exit, this merge
 
- 
+git push origin master  now works, merged together and in the right order synced git local and online
+
+HEAD-> points to where we are, the head shows where git think we are
+
+---Lesson 20---
+git pull download all code from github, store in memory, writes the commit and skips to top
+
+what if github have work that we don have and we dont want that
+
+change empty file to not empty file , commited in github online
+
+it will show in commits that we diont have in local
+
+git log will not show it
+
+git fetch origin master will download all code but not apply, la -la. shows empty file, but online it is changer
+
+git fetch origin master, download that there is commit, but not apply it yet.
+
+ls -la, nothing changed
+
+git log shows nothinh yet, but it is accesible
+
+git log --oneline --graph --decorate --all shows that there is something new online but we are not there yet
+
+git pull gonna fast forward us to there, not git log --oneline ... shows that we are in the latest commit
+
+ls -la, shows that the empty file changed
+
+git pull = git fetch and running git merge origin/master
+
+---Lesson 21---
+git allows to look trhough code thorugh time, git log has a hash
+
+suppose we gonna go back to initial repo
+
+git checkout [hash]
+
+noe it shows we are detached head state, look around and test and commit, and discard anything en ntohing wil change the original
+
+ls -la, shows we only have 1 file, at begin of course we only had one file
+
+git log thinks there is only commit,HEAD is at hash(not at master anymore)
+
+now suppose we move forward
+
+git checkout [hash]
+
+still detached
+
+ls -la shows the files as was the case there
+
+git checkout new-branch, you can check the hase there as well
+
+git status is showing head deatch, to move head to current time
+git checkout master 
+ls -la, git log, shows we are intthe latest version
+
+we going to branch
+
+we git checkout in time
+
+git checkout -b timewarp-branch
+touch timewarp.txt
+
+git status, shows we have new file
+
+gid add.
+git commit -m "timewarp"
+git push origin timewarp-branch
+
+now the repo shows there is new branch from the place we went back to, sueful to go back to earlier version and try something new
+
+git log now shows head is at timewarp-branch , not detached anymore
+
+you can see new branch is created
+
+use it when you want to go back to code version that you dont want
+
+git checkout master
+git merge timewarp-branch
+
+git log will show timewarp is branched
+
+we went back in time and made a change to moved forward
+git push origin master and now everthing is in sync
+---Lesson 22---
+
