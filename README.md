@@ -1,5 +1,6 @@
-# gitessentials
-Some new stuff here
+# Git essential / github for everyone
+this course teaches you about git
 ##Deployment notes
+Please check it out
 
 
