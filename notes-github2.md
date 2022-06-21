@@ -39,5 +39,73 @@ we gonna create .gitignore, and list filename and types that we dont want
 
 now, .todo does not show when we git status 
 
+# Lesson 25
+git lg is an alias
 
+nano ~/.gitconfig
+
+git lg is now aliased and can be used to use a command
+
+# Lesson 26
+we make a bad-commit mesage file
+
+git commit -m "type here"
+
+git commit --amend (here we can edit message to commit)
+
+opens vim edit thens tatus to check and then we push
+
+# Lesson 27
+copying repo
+	we can download, clone, or fork it
+
+forking = copying into my profile, then you can clone in your repo 
+
+forking = taking existing project and copying to your own profile 
+
+check licensing if you wanna use it for yourself
+
+check django
+
+you can continue that fork on your account if you dont acces it
+
+# Lesson 28
+git issues, not bad, mislabeled
+
+issue place to start conversation
+
+document a bug
+
+create issue: make better readme, your readme could be better
+
+close issue will issue go away
+
+# Lesson 29
+pull request is vital part of comparing code
+
+code, issues etc, pull request biggest to use
+
+pull request is basically saying you have version of code to incorporate into your code
+
+git branch
+
+going to git checkout -b pr-test
+
+git branch and check we are pr-test
+
+we edited read, then add commit and pushed to pr-test, shows now pull req in github
+
+new pull requrest, we gouing to take code from pr test merge into master
+
+we can create pull or draft
+pr-test means pull requst
+
+most people stick with merge commit
+
+
+requerst teview and so on
+
+git branch -d pr-test delets it, 
+
+# Lesson 30
 
