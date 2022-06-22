@@ -108,4 +108,82 @@ requerst teview and so on
 git branch -d pr-test delets it, 
 
 # Lesson 30
+how to undo a commit / local work
 
+supose we did git merge and something went wrong
+
+we might have merged wrong branch
+
+git log --oneline shows one line
+
+suppose how to do uncommit
+
+
+softor hard reset
+we add file and add and commit it
+
+git status showd we are one ahead,,
+
+how to undo this,
+
+git reset --hard with commit hash, undo everything till then and delete it
+
+git reset --hard [commit id]  will delete work
+
+and go back
+
+touch sample.txt
+
+suppos we add again
+
+git reset --soft origin/master
+now file still there
+git reset empty.txt 
+rm empty.txt
+
+this is copmmited, undid commit, git log oneline shows it
+
+# Lesson 31 force pushing
+what if you commited and pushed to github
+
+touch undo.txt
+
+add,commit and push
+
+suppose it is accident, how to undo
+
+move forward with lot of caution, forced push
+
+this will delete everything eelse if you do this , if you go timewarp force, it will get rid of everytghing
+
+gonna remove the commit
+
+git reset --hard with hash and going backt here
+forced push
+
+now git push origin master --force, gonna remove the latest commit on github and put our head, head is one ebhind due to reset in github
+anddd delete the last commit
+
+ddont really use it
+
+# Lesson 32
+
+rebasing
+
+git tree gets quite tough
+
+rebase allows cleaing the tree
+
+where we dont see the merge commits
+
+git checkout -b rebase_branch
+added file for test purpose
+one head behind
+git checkout master
+difference merge and rebase is cleaniliness and history
+
+git checkout master
+git rebase rebase-branch plopped on top of the tree
+
+
+#Lesson 33
