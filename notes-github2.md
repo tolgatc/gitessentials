@@ -277,4 +277,16 @@ how otuntag
 git tag -d nametag deleter tag localyl
 git push origin --delete typo-tag
 
-# Lesson 36
+# Lesson 36 Learn more!!!
+to continue learning
+
+learngitbranching.js.org
+
+books.goalkicker.com/gitbook free
+
+very extensive books
+
+course is for daily work
+
+continous integration , circle ci, or travis, to work with team
+https://www.skillshare.com/classes/Git-Essentials-Learn-Git-Github-from-scratch/1080260569/projects
