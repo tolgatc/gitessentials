@@ -187,3 +187,94 @@ git rebase rebase-branch plopped on top of the tree
 
 
 #Lesson 33
+Conflict is two changes in same file in same place
+
+merge conflict
+
+rebase conflicht, almost the same
+
+now we add merge conflict file in github
+
+and make a similar one with a slight change in local
+
+try to add,commit, push conflight
+
+pull conflioct
+
+git status now shows there is conflict
+
+git diff filename will show the difference
+
+nano filename now shows weird stuff
+
+we nede to fix it 
+
+now git commit and save and quit 
+
+git commit shows indeed merged local
+
+git push will bring itto github
+
+first you edit, see differences than fix it, git add,commit and push
+
+now we ggoing to rebase conflict
+
+make rebase conflicht
+
+we make rebase branch with same file slightly different,
+
+try to rebase master, gives conflict
+
+git diff now shows proper difference rather than ===<<<>>>>
+
+edit and improve(can be hybrid)
+
+git add, git rebase --continue , nice clean branch
+
+# Lesson 34 Stashing
+save it, dont show, and dont tell me its there, useful when trying to setich branches, useful for worky our
+you dont want to commit, but also want to save
+
+stash save file behind scenes, and continue later
+
+create new branch git branch stash-example
+
+we edited readme and see the difference with diff
+
+we cant do git add /commit
+
+switching to master and checking status will you show the new feature change
+
+git checkout stash-example
+
+switch to branch and git stash
+
+git stash list show whole list
+
+git stash apply 
+
+now see work from astash
+like temp save
+
+saved, do somethinh else somewhere else, comeback and continue later, power of stashing
+
+# Lesson 35
+
+tagging
+
+tagging is marking milestone
+
+tag important
+
+version fore xample
+
+push to exxist
+
+tag goes to specific point in code, with a tag
+
+how otuntag
+
+git tag -d nametag deleter tag localyl
+git push origin --delete typo-tag
+
+# Lesson 36
