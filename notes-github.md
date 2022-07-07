@@ -1,21 +1,21 @@
----Lesson 3---
+#Lesson 3---
 dir (show directory)
 cd (change directory)
 pwd (working directory
----Lesson 4---
+#Lesson 4---
 git config --global user.name "full name" (configure name)
 git config --global user.email "full name" (configure email , match github)
 cat ~/.gitconfig (should show file with data above)
----Lesson 5---
+#Lesson 5---
 ssh-keygen -o (generate ssh key)
 
 - This key should be pasted into github ssk keys in seetings
----Lesson 6---
+#Lesson 6---
 git clone (url with ssh in github)
 ls -la (shows all files)
 git log
 
----Lesson 7---
+#Lesson 7---
 assume you have repo: gitessentials
 quick setup follow on github commands
 mkdir test (makes directory test)
@@ -26,7 +26,7 @@ git commit -m "First commit"
 git log
 git remote add origin (add here url of your repo)
 git push origin master
----Lesson 10---
+#Lesson 10---
 unstager work
 stage work
 commit work
@@ -47,7 +47,7 @@ git commit -m "first push" (this created commited)
 git push origin master (this take current commit to origin(github), uploaded an new)
 
 
----Lesson 11---
+#Lesson 11---
 git status (run often!)
 
 edit first-push.txt file
@@ -67,7 +67,7 @@ git push origin master (send to github, new commit)
 rm first-push.txt (removes file)
 ls -la, show  files gona
 git status will saym file is deleted 
---- Lesson 12 ---
+#Lesson 12 ---
 git add . (add all files)
 
 git status (now will show the files is deleted)
@@ -85,7 +85,7 @@ git status (shows unstaged)
 
 how to undelete
 
---- Lesston 13 ---
+#Lesson 13 ---
 alread did rm first push
 
 its gone
@@ -98,12 +98,12 @@ git status, will show brach is up to date and file exist again
 rm first-push.txt
 git checkout first-push.txt
 file came back
----lesson 14---
+#lesson 14---
 git remote -v, shows all rmote oigin
 
 git push production feature branch name
 
----lesson 15---
+#lesson 15---
 
 git checkout -b new-branch
 git checkout new-branch
@@ -112,7 +112,7 @@ still all local
 
 git branch shows we are all now new bracnh
 
---- lesston 16
+#lesson 16
 git checkout -b new-branch makes new branch
 
 switch between branch is with git checkout -name
@@ -132,7 +132,7 @@ now you can see github accep new coe, there is new code with file
 
 doesnta exist in master
 
----lesston 17--- merging
+#lesston 17--- merging
 
 gt cehckout newbranch
 
@@ -157,7 +157,7 @@ master now on github website has new stuff
 
 and the file showd under master branch
 
----lesson 18
+#lesson 18
 
 git log shows latest change
 
@@ -169,7 +169,7 @@ git pull origin master, gets latest version on git
  
  with q exti
  
- ---leson 19---
+#lesson 19---
  
  git pull origin master, for current branch
  
@@ -205,7 +205,7 @@ git push origin master  now works, merged together and in the right order synced
 
 HEAD-> points to where we are, the head shows where git think we are
 
----Lesson 20---
+#Lesson 20---
 git pull download all code from github, store in memory, writes the commit and skips to top
 
 what if github have work that we don have and we dont want that
@@ -232,7 +232,7 @@ ls -la, shows that the empty file changed
 
 git pull = git fetch and running git merge origin/master
 
----Lesson 21---
+#Lesson 21---
 git allows to look trhough code thorugh time, git log has a hash
 
 suppose we gonna go back to initial repo
@@ -287,5 +287,5 @@ git log will show timewarp is branched
 
 we went back in time and made a change to moved forward
 git push origin master and now everthing is in sync
----Lesson 22---
+#Lesson 22---
 
